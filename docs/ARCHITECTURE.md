@@ -82,6 +82,6 @@ Cores do disco alinhadas à marca do portfólio (`#3ad4ba`, `#8fa8b5`, etc.).
 
 ## Limites atuais
 
-- Sem formulário de contato / e-mail público no repositório
+- Sem formulário de contato embutido (contato via WhatsApp / telefone e GitHub)
 - Sem i18n (apenas `pt-BR`)
 - Sem testes automatizados ainda
