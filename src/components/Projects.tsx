@@ -77,14 +77,16 @@ export function Projects() {
                       Ver demo ↗
                     </a>
                   )}
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[11px] uppercase tracking-[0.18em] text-mist/85 transition hover:text-signal"
-                  >
-                    Código ↗
-                  </a>
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[11px] uppercase tracking-[0.18em] text-mist/85 transition hover:text-signal"
+                    >
+                      Código ↗
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.article>
@@ -129,14 +131,16 @@ export function Projects() {
                       Demo ↗
                     </a>
                   )}
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[10px] uppercase tracking-[0.18em] text-mist/75"
-                  >
-                    Código ↗
-                  </a>
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[10px] uppercase tracking-[0.18em] text-mist/75"
+                    >
+                      Código ↗
+                    </a>
+                  )}
                 </div>
               </motion.article>
             ))}

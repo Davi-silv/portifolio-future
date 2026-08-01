@@ -56,7 +56,7 @@ Arquivo: `src/data/projects.ts`
   stack: ["React", "Node.js"],
   role: "Fullstack",
   live: "https://…",   // opcional
-  repo: "https://github.com/…",
+  repo: "https://github.com/…", // opcional
   featured: true       // aparece na lista principal
 }
 ```

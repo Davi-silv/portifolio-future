@@ -6,11 +6,29 @@ export type Project = {
   stack: string[];
   role: string;
   live?: string;
-  repo: string;
+  repo?: string;
   featured?: boolean;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "lagos-stays",
+    title: "Lagos Stays",
+    tagline: "Temporada · Pix · PWA · Região dos Lagos",
+    description:
+      "Plataforma de aluguel por temporada na Região dos Lagos (RJ), com catálogo curado, reservas, pagamento via Pix manual, chat hóspede–anfitrião, painel do anfitrião e admin. PWA instalável com SSR e SEO.",
+    stack: [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "PWA",
+    ],
+    role: "Fullstack e produto",
+    live: "https://lagos-stays.lovable.app",
+    featured: true,
+  },
   {
     slug: "cardapio-digital",
     title: "Cardápio Digital",
@@ -94,19 +112,35 @@ export const projects: Project[] = [
 export const skills = [
   {
     area: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Vite", "HTML e CSS", "Ionic"],
+    items: [
+      "React",
+      "Next.js",
+      "TanStack Start",
+      "TypeScript",
+      "Vite",
+      "HTML e CSS",
+      "Ionic",
+    ],
   },
   {
     area: "Backend",
-    items: ["Node.js", "Express", "JWT", "SQLite", "APIs REST", "Validação"],
+    items: [
+      "Node.js",
+      "Express",
+      "Supabase",
+      "JWT",
+      "SQLite",
+      "APIs REST",
+      "Validação",
+    ],
   },
   {
     area: "Produto",
     items: [
       "UX orientada a conversão",
-      "Fluxos WhatsApp",
-      "E-commerce",
-      "Interfaces mobile",
+      "Fluxos WhatsApp e Pix",
+      "E-commerce e temporada",
+      "PWA e interfaces mobile",
     ],
   },
   {

@@ -79,6 +79,7 @@ Neste workspace, o **Go Live** usa a porta **5502** e redireciona automaticament
 
 ## Projetos em destaque
 
+- [Lagos Stays](https://lagos-stays.lovable.app) — aluguel por temporada (Região dos Lagos), Pix e PWA  
 - [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — produto real com pedido via WhatsApp  
 - [Loja de Perfumes](https://github.com/Davi-silv/loja-perfumes) — e-commerce frontend  
 
