@@ -18,9 +18,8 @@ export function Contact() {
             Vamos conversar sobre o próximo projeto
           </h2>
           <p className="mt-5 max-w-lg text-steel md:text-[1.05rem]">
-            Aberto a freelas, times de produto e desafios fullstack. Me chame no
-            WhatsApp, veja meu código no GitHub ou explore a demo da aplicação
-            completa.
+            Aberto a freelas, times de produto e novos desafios. Me chame no
+            WhatsApp ou veja meu código no GitHub.
           </p>
 
           <div className="mt-8 border-t border-line pt-6">
@@ -52,14 +51,6 @@ export function Contact() {
               className="inline-flex h-11 items-center border border-line px-5 font-mono text-[11px] uppercase tracking-[0.2em] text-mist transition hover:border-steel hover:text-signal"
             >
               Abrir GitHub
-            </a>
-            <a
-              href="https://aplica-o-dev-fullstack.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-11 items-center border border-line px-5 font-mono text-[11px] uppercase tracking-[0.2em] text-mist transition hover:border-steel hover:text-signal"
-            >
-              Ver app fullstack
             </a>
           </div>
         </div>

@@ -30,7 +30,7 @@ O site é uma single-page application com seções:
 | **Projetos** | Trabalhos destacados + grade de projetos adicionais |
 | **Competências** | Frontend, Backend, Produto e Entrega |
 | **Sobre** | Foto, bio e indicadores |
-| **Contato** | Links para GitHub e demo fullstack |
+| **Contato** | Links para WhatsApp e GitHub |
 
 Os dados dos projetos ficam centralizados em `src/data/projects.ts`.
 
@@ -79,7 +79,6 @@ Neste workspace, o **Go Live** usa a porta **5502** e redireciona automaticament
 
 ## Projetos em destaque
 
-- [Aplicação Fullstack](https://github.com/Davi-silv/aplica--o-dev-fullstack) — React + Node.js + JWT + SQLite  
 - [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — produto real com pedido via WhatsApp  
 - [Loja de Perfumes](https://github.com/Davi-silv/loja-perfumes) — e-commerce frontend  
 

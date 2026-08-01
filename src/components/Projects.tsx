@@ -18,11 +18,11 @@ export function Projects() {
             className="mt-3 font-[family-name:var(--font-syne)] text-3xl tracking-tight text-mist md:text-4xl"
             style={{ fontWeight: 700 }}
           >
-            Trabalho que demonstra o ciclo completo
+            Trabalho selecionado
           </h2>
           <p className="mt-4 max-w-xl text-steel md:text-[1.05rem]">
-            Uma seleção dos meus repositórios no GitHub — do backend com
-            autenticação a produtos digitais em produção.
+            Uma seleção dos meus repositórios no GitHub — produtos digitais e
+            interfaces em produção.
           </p>
         </div>
 

@@ -12,18 +12,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "fullstack-tasks",
-    title: "Aplicação Fullstack",
-    tagline: "Autenticação · API REST · CRUD",
-    description:
-      "Aplicação completa com React no frontend e Node.js/Express no backend. Inclui cadastro e login com JWT, hash de senhas, SQLite, validação de dados e gerenciamento de tarefas com rotas protegidas.",
-    stack: ["React", "Node.js", "Express", "SQLite", "JWT", "Vite"],
-    role: "Desenvolvimento fullstack",
-    live: "https://aplica-o-dev-fullstack.vercel.app",
-    repo: "https://github.com/Davi-silv/aplica--o-dev-fullstack",
-    featured: true,
-  },
-  {
     slug: "cardapio-digital",
     title: "Cardápio Digital",
     tagline: "Produto comercial · WhatsApp · QR Code",
