@@ -1,0 +1,21 @@
+{
+  "liveServer.settings.port": 5502,
+  "liveServer.settings.root": "/.liveserver",
+  "liveServer.settings.file": "/index.html",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.wait": 100,
+  "liveServer.settings.mount": [],
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    ".next/**",
+    "node_modules/**",
+    "src/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "liveServer.settings.multiRootWorkspaceName": "portifolio-future"
+}
