@@ -23,7 +23,7 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-400 ${
         scrolled
-          ? "border-b border-line bg-void/85 backdrop-blur-md"
+          ? "border-b border-line bg-void/75 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >

@@ -1,21 +1,18 @@
-import { GlobeStage } from "./GlobeStage";
-
 export function Hero() {
   return (
     <section
       id="topo"
       className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-20 pt-28 md:justify-center md:pb-28 md:pt-24"
     >
-      <div className="pointer-events-none absolute inset-0 grid-field" />
-
-      <div className="pointer-events-none absolute inset-y-0 right-[-6%] hidden w-[56%] md:block lg:right-0 lg:w-[52%]">
-        <GlobeStage />
-      </div>
+      <div className="pointer-events-none absolute inset-0 grid-field opacity-60" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 md:px-8">
         <div className="max-w-xl lg:max-w-[34rem]">
           <div className="animate-rise flex items-center gap-3">
-            <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden="true" />
+            <span
+              className="h-1.5 w-1.5 rounded-full bg-signal"
+              aria-hidden="true"
+            />
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-signal">
               Desenvolvedor Fullstack
             </p>
@@ -48,10 +45,6 @@ export function Hero() {
               Entrar em contato
             </a>
           </div>
-        </div>
-
-        <div className="pointer-events-none relative mt-14 h-52 w-full md:hidden">
-          <GlobeStage />
         </div>
       </div>
 

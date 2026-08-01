@@ -1,9 +1,9 @@
 # Portfólio Future — Davi Silva
 
-Portfólio profissional de **Davi Barbosa da Silva**, desenvolvido com Next.js, TypeScript e Tailwind CSS. Apresenta projetos fullstack selecionados do GitHub, com visual contemporâneo e o componente **Black Hole** (Originkit) no hero.
+Portfólio profissional de **Davi Barbosa da Silva**, desenvolvido com Next.js, TypeScript e Tailwind CSS. Apresenta projetos fullstack selecionados do GitHub, com visual contemporâneo e o componente **Tornado / Vortex** (Originkit) como fundo animado em todo o site.
 
 **Autor:** [Davi-silv](https://github.com/Davi-silv)  
-**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion
+**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion · Three.js · Originkit Tornado
 
 ---
 
@@ -26,7 +26,7 @@ O site é uma single-page application com seções:
 
 | Seção | Conteúdo |
 |---|---|
-| **Hero** | Marca DAVI SILVA, CTAs e animação Black Hole |
+| **Hero** | Marca DAVI SILVA, CTAs e Tornado Originkit (fundo global) |
 | **Projetos** | Trabalhos destacados + grade de projetos adicionais |
 | **Competências** | Frontend, Backend, Produto e Entrega |
 | **Sobre** | Foto, bio e indicadores |
