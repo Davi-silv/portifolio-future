@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Future — Davi Silva
 
-## Getting Started
+Portfólio profissional de **Davi Barbosa da Silva**, desenvolvido com Next.js, TypeScript e Tailwind CSS. Apresenta projetos fullstack selecionados do GitHub, com visual contemporâneo e o componente **Black Hole** (Originkit) no hero.
 
-First, run the development server:
+**Autor:** [Davi-silv](https://github.com/Davi-silv)  
+**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion
+
+---
+
+## Demonstração local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra: [http://localhost:3100](http://localhost:3100)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> A porta padrão deste projeto é **3100** (evita conflito com caches de outros apps em `localhost:3000`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Visão geral
 
-To learn more about Next.js, take a look at the following resources:
+O site é uma single-page application com seções:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Seção | Conteúdo |
+|---|---|
+| **Hero** | Marca DAVI SILVA, CTAs e animação Black Hole |
+| **Projetos** | Trabalhos destacados + grade de projetos adicionais |
+| **Competências** | Frontend, Backend, Produto e Entrega |
+| **Sobre** | Foto, bio e indicadores |
+| **Contato** | Links para GitHub e demo fullstack |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Os dados dos projetos ficam centralizados em `src/data/projects.ts`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estrutura do projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+portifolio-future/
+├── .liveserver/          # Entrada do Go Live → redireciona para :3100
+├── .vscode/              # Settings do Live Server e tasks
+├── docs/                 # Documentação técnica
+├── public/               # Assets estáticos (foto, ícones)
+├── src/
+│   ├── app/              # App Router (layout, page, globals)
+│   ├── components/       # UI do portfólio + Originkit
+│   │   └── originkit/ui/ # Black Hole e placeholder Globe
+│   └── data/             # Projetos e competências
+├── package.json
+└── README.md
+```
+
+Documentação detalhada: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)
+
+---
+
+## Scripts
+
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento em `0.0.0.0:3100` |
+| `npm run build` | Build de produção |
+| `npm run start` | Sobe o build em `0.0.0.0:3100` |
+| `npm run lint` | ESLint |
+
+---
+
+## Go Live (Live Server)
+
+Neste workspace, o **Go Live** usa a porta **5502** e redireciona automaticamente para o Next.js em **http://localhost:3100**.
+
+1. Rode `npm run dev`
+2. Clique em **Go Live** na barra de status do Cursor/VS Code
+
+---
+
+## Projetos em destaque
+
+- [Aplicação Fullstack](https://github.com/Davi-silv/aplica--o-dev-fullstack) — React + Node.js + JWT + SQLite  
+- [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — produto real com pedido via WhatsApp  
+- [Loja de Perfumes](https://github.com/Davi-silv/loja-perfumes) — e-commerce frontend  
+
+Lista completa editável em `src/data/projects.ts`.
+
+---
+
+## Deploy
+
+Recomendado na [Vercel](https://vercel.com):
+
+```bash
+npm run build
+```
+
+Configure a porta apenas se for self-hosting; na Vercel a porta é gerenciada automaticamente.
+
+---
+
+## Licença
+
+Projeto pessoal de portfólio. Código disponível para fins de demonstração e estudo.
