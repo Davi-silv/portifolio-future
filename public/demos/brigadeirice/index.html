@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Brigadeirice — Doces Gourmet</title>
+  <meta name="description" content="Brigadeirice: brigadeiros gourmet feitos com ingredientes selecionados, embalagem sofisticada e sabor que encanta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-mark" href="#topo" aria-label="Brigadeirice início">
+      <span class="brand-mark__script">Brigadeirice</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#sabores">Sabores</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#essencia">Essência</a>
+      <a href="#historia">História</a>
+      <a class="nav__cta" href="#catalogo">Pedir</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="imagem/logo.png" alt="" class="hero__img" />
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Origem &amp; Sabor</p>
+        <h1 class="hero__brand">Brigadeirice</h1>
+        <p class="hero__lead">Brigadeiros gourmet que transformam o cotidiano em momento especial.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalogo">Peça o seu</a>
+          <a class="btn btn--ghost" href="#catalogo">Ver catálogo</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#sabores" aria-label="Rolar para sabores">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="sabores" id="sabores">
+      <div class="sabores__intro" data-reveal>
+        <p class="section-label">O produto</p>
+        <h2>Cada brigadeiro,<br /><em>um detalhe a mais.</em></h2>
+        <p class="section-copy">Do clássico ao gourmet — seleção artesanal, pronta para presentear ou saborear.</p>
+      </div>
+
+      <div class="sabores__showcase" data-reveal>
+        <figure class="sabores__feature" style="--i:0">
+          <img src="imagem/sabores-variados.png" alt="Seleção variada de brigadeiros gourmet" loading="lazy" />
+        </figure>
+
+        <div class="sabores__stack">
+          <figure class="sabores__shot" style="--i:1">
+            <img src="imagem/sabores-tradicional.png" alt="Caixa de brigadeiros tradicionais com granulado" loading="lazy" />
+          </figure>
+          <figure class="sabores__shot" style="--i:2">
+            <img src="imagem/sabores-beijinho.png" alt="Brigadeiro tradicional e beijinho de coco" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="sabores__band">
+          <figure class="sabores__shot" style="--i:3">
+            <img src="imagem/sabores-romeu.png" alt="Docinhos Romeu e Julieta e Ninho" loading="lazy" />
+          </figure>
+          <figure class="sabores__shot" style="--i:4">
+            <img src="imagem/sabores-morango.png" alt="Brigadeiros de chocolate e bicho de pé" loading="lazy" />
+          </figure>
+          <figure class="sabores__shot" style="--i:5">
+            <img src="imagem/sabores-mix.png" alt="Mix de brigadeiros tradicionais e gourmet" loading="lazy" />
+          </figure>
+          <figure class="sabores__shot" style="--i:6">
+            <img src="imagem/sabores-trufa.png" alt="Trufas de chocolate com cacau" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+      <div class="catalogo__intro" data-reveal>
+        <p class="section-label">Catálogo</p>
+        <h2>Escolha o sabor<br /><em>do seu momento.</em></h2>
+        <p class="section-copy">Defina a quantidade de cada doce e envie o pedido pelo WhatsApp. Unidade R$&nbsp;3 · caixinha com 4 unidades R$&nbsp;12. Cento: tradicionais R$&nbsp;160 · gourmet R$&nbsp;250.</p>
+      </div>
+
+      <form class="catalogo__form" id="pedido-form" data-reveal>
+        <div class="catalogo__grid">
+          <fieldset class="catalogo__group">
+            <legend class="catalogo__head">
+              <span class="catalogo__eyebrow">Linha clássica</span>
+              <span class="catalogo__title">Sabores tradicionais</span>
+              <span class="catalogo__price">R$ 160 <small>o cento</small></span>
+            </legend>
+            <div class="catalogo__list">
+              <div class="flavor" data-linha="tradicional">
+                <div class="flavor__info">
+                  <span class="flavor__text">Brigadeiro Tradicional</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Brigadeiro Tradicional">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Brigadeiro Tradicional">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Brigadeiro Tradicional"
+                    data-linha="tradicional"
+                    aria-label="Quantidade de Brigadeiro Tradicional"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Brigadeiro Tradicional">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="tradicional">
+                <div class="flavor__info">
+                  <span class="flavor__text">Beijinho de coco</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Beijinho de coco">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Beijinho de coco">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Beijinho de coco"
+                    data-linha="tradicional"
+                    aria-label="Quantidade de Beijinho de coco"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Beijinho de coco">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="tradicional">
+                <div class="flavor__info">
+                  <span class="flavor__text">Bicho de pé <span>(morango)</span></span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Bicho de pé (morango)">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Bicho de pé (morango)">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Bicho de pé (morango)"
+                    data-linha="tradicional"
+                    aria-label="Quantidade de Bicho de pé (morango)"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Bicho de pé (morango)">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="tradicional">
+                <div class="flavor__info">
+                  <span class="flavor__text">Casadinho <span>(ninho com brigadeiro)</span></span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Casadinho (ninho com brigadeiro)">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Casadinho (ninho com brigadeiro)">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Casadinho (ninho com brigadeiro)"
+                    data-linha="tradicional"
+                    aria-label="Quantidade de Casadinho (ninho com brigadeiro)"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Casadinho (ninho com brigadeiro)">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="tradicional">
+                <div class="flavor__info">
+                  <span class="flavor__text">Ninho com morango <span>(casadinho)</span></span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Ninho com morango (casadinho)">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Ninho com morango (casadinho)">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Ninho com morango (casadinho)"
+                    data-linha="tradicional"
+                    aria-label="Quantidade de Ninho com morango (casadinho)"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Ninho com morango (casadinho)">+</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="catalogo__group catalogo__group--gourmet">
+            <legend class="catalogo__head">
+              <span class="catalogo__eyebrow">Linha especial</span>
+              <span class="catalogo__title">Sabores gourmet</span>
+              <span class="catalogo__price">R$ 250 <small>o cento</small></span>
+            </legend>
+            <div class="catalogo__list">
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Brigadeiro gourmet</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Brigadeiro gourmet">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Brigadeiro gourmet">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Brigadeiro gourmet"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Brigadeiro gourmet"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Brigadeiro gourmet">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Ninho com Nutella</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Ninho com Nutella">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Ninho com Nutella">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Ninho com Nutella"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Ninho com Nutella"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Ninho com Nutella">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Ferrero Rocher</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Ferrero Rocher">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Ferrero Rocher">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Ferrero Rocher"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Ferrero Rocher"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Ferrero Rocher">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Romeu e Julieta</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Romeu e Julieta">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Romeu e Julieta">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Romeu e Julieta"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Romeu e Julieta"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Romeu e Julieta">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Churros</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Churros">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Churros">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Churros"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Churros"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Churros">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Prestígio</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Prestígio">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Prestígio">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Prestígio"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Prestígio"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Prestígio">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Coco queimado</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Coco queimado">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Coco queimado">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Coco queimado"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Coco queimado"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Coco queimado">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Morango com Nutella</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Morango com Nutella">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Morango com Nutella">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Morango com Nutella"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Morango com Nutella"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Morango com Nutella">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Chocolate 50%</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Chocolate 50%">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Chocolate 50%">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Chocolate 50%"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Chocolate 50%"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Chocolate 50%">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Chocolate 100%</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Chocolate 100%">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Chocolate 100%">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Chocolate 100%"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Chocolate 100%"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Chocolate 100%">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Paçoca</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Paçoca">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Paçoca">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Paçoca"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Paçoca"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Paçoca">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">M&amp;M</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de M&M">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir M&M">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="M&M"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de M&M"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar M&M">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Napolitano</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Napolitano">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Napolitano">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Napolitano"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Napolitano"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Napolitano">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Café</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Café">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Café">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Café"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Café"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Café">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Torta de limão</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Torta de limão">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Torta de limão">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Torta de limão"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Torta de limão"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Torta de limão">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Surpresa de uva</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Surpresa de uva">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Surpresa de uva">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Surpresa de uva"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Surpresa de uva"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Surpresa de uva">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Sensação <span>(chocolate e morango)</span></span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Sensação (chocolate e morango)">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Sensação (chocolate e morango)">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Sensação (chocolate e morango)"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Sensação (chocolate e morango)"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Sensação (chocolate e morango)">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Maracujá</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Maracujá">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Maracujá">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Maracujá"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Maracujá"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Maracujá">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Crème Brûlée</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Crème Brûlée">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Crème Brûlée">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Crème Brûlée"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Crème Brûlée"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Crème Brûlée">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Queijo Brûlée</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Queijo Brûlée">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Queijo Brûlée">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Queijo Brûlée"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Queijo Brûlée"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Queijo Brûlée">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Oreo</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Oreo">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Oreo">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Oreo"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Oreo"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Oreo">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Limão</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Limão">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Limão">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Limão"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Limão"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Limão">+</button>
+                </div>
+              </div>
+              <div class="flavor" data-linha="gourmet">
+                <div class="flavor__info">
+                  <span class="flavor__text">Milho</span>
+                </div>
+                <div class="flavor__qty" role="group" aria-label="Quantidade de Milho">
+                  <button type="button" class="flavor__btn" data-action="minus" aria-label="Diminuir Milho">−</button>
+                  <input
+                    class="flavor__input"
+                    type="number"
+                    name="sabor"
+                    value="0"
+                    min="0"
+                    max="99"
+                    inputmode="numeric"
+                    data-name="Milho"
+                    data-linha="gourmet"
+                    aria-label="Quantidade de Milho"
+                  />
+                  <button type="button" class="flavor__btn" data-action="plus" aria-label="Aumentar Milho">+</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="catalogo__bar" id="pedido-bar">
+          <div class="catalogo__bar-copy">
+            <p class="catalogo__count" id="pedido-count">Nenhum doce selecionado</p>
+            <p class="catalogo__pack" id="pedido-pack">Caixinha com 4 unidades: R$ 12</p>
+            <p class="catalogo__total" id="pedido-total">Total: R$ 0,00</p>
+            <p class="catalogo__hint" id="pedido-hint">Escolha a quantidade de ao menos um sabor.</p>
+          </div>
+          <div class="catalogo__bar-actions">
+            <button type="button" class="btn btn--ghost-dark" id="pedido-limpar" disabled>Limpar</button>
+            <button type="submit" class="btn btn--whatsapp" id="pedido-enviar" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/><path fill="currentColor" d="M12.04 2C6.5 2 2 6.48 2 12c0 1.77.46 3.45 1.28 4.92L2.05 22l5.25-1.38A9.96 9.96 0 0012.04 22C17.56 22 22 17.52 22 12S17.56 2 12.04 2zm0 18.13c-1.58 0-3.05-.43-4.32-1.18l-.31-.18-3.12.82.83-3.04-.2-.32A8.1 8.1 0 013.9 12c0-4.48 3.65-8.12 8.14-8.12 4.48 0 8.12 3.64 8.12 8.12 0 4.49-3.64 8.13-8.12 8.13z"/></svg>
+              Enviar pedido
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="essencia" id="essencia">
+      <div class="essencia__media" data-reveal>
+        <img src="imagem/brigadeiro-1.png" alt="Caixa aberta de brigadeiros gourmet Brigadeirice" />
+      </div>
+      <div class="essencia__list" data-reveal>
+        <p class="section-label">Por que Brigadeirice</p>
+        <h2>Pequenos detalhes,<br /><span class="script">grandes momentos.</span></h2>
+        <ul class="pillars">
+          <li>
+            <span class="pillars__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/><path d="M12 22c2 4 6 7 8 7s6-3 8-7c1-2-1-4-3-3-2 1-3 2-5 2s-3-1-5-2c-2-1-4 1-3 3z" stroke="currentColor" stroke-width="1.2"/><path d="M14 16c0-2 1.5-3.5 3-3.5S20 14 20 16M20 16c0-2 1.5-3.5 3-3.5S26 14 26 16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <h3>Ingredientes selecionados</h3>
+              <p>Sabor que encanta em cada mordida.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillars__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/><path d="M20 8l2.4 7.2H30l-6 4.4 2.3 7.2L20 22.8l-6.3 4 2.3-7.2-6-4.4h7.6L20 8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Qualidade premium</h3>
+              <p>Excelência em cada detalhe da produção.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillars__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/><path d="M20 30s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0128 19c0 5.8-8 11-8 11z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Feitos com amor</h3>
+              <p>Porque amor também se saboreia.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillars__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/><rect x="10" y="15" width="20" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M10 19h20M20 15v14M14 15c0-2 1.5-4 6-4s6 2 6 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <h3>Embalagem sofisticada</h3>
+              <p>Para momentos ainda mais especiais.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="historia" id="historia">
+      <div class="historia__frame" data-reveal>
+        <img src="imagem/sobre.png" alt="Fundadora da Brigadeirice com o carrinho de doces gourmet" />
+      </div>
+      <div class="historia__copy" data-reveal>
+        <p class="section-label">A história</p>
+        <h2>Feito à mão,<br />servido com presença.</h2>
+        <p class="section-copy">Por trás de cada caixa há alguém que escolhe o ponto certo do brigadeiro, a forminha certa e o laço que completa o presente. A Brigadeirice nasce do prazer de criar doces que celebram encontros.</p>
+        <p class="historia__tag">Sabor que encanta. Qualidade que conquista.</p>
+      </div>
+    </section>
+
+    <section class="pedido" id="pedido">
+      <div class="pedido__panel" data-reveal>
+        <p class="section-label section-label--light">Encomendas</p>
+        <h2>Leve a Brigadeirice<br />para o seu momento.</h2>
+        <p class="section-copy">Selecione os sabores no catálogo e envie seu pedido pelo WhatsApp.</p>
+        <a class="btn btn--primary" href="#catalogo">Ir para o catálogo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-mark__script">Brigadeirice</span>
+    <p>Doces gourmet · Origem &amp; Sabor</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

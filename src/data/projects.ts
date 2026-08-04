@@ -42,6 +42,18 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "brigadeirice",
+    title: "Brigadeirice",
+    tagline: "Doces gourmet · Landing · WhatsApp",
+    description:
+      "Landing page da marca Brigadeirice: sabores, catálogo, essência e história, com pedido direto pelo WhatsApp. HTML, CSS e JavaScript puro, layout responsivo e foco em conversão.",
+    stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
+    role: "Frontend e produto",
+    live: "/demos/brigadeirice/index.html",
+    repo: "https://github.com/Davi-silv/Brigadeirice",
+    featured: true,
+  },
+  {
     slug: "loja-perfumes",
     title: "Loja de Perfumes",
     tagline: "E-commerce · Catálogo · Conversão",
