@@ -45,22 +45,22 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-4 text-[1.02rem] leading-relaxed text-steel md:text-[1.05rem]">
             <p>
-              Sou desenvolvedor fullstack e construo sistemas utilizáveis de
-              verdade: autenticação, APIs, interfaces e fluxos que resolvem
-              problemas de negócio — de apps autenticados a cardápios digitais
-              que fecham pedido no WhatsApp.
+              Sou desenvolvedor fullstack e construo produtos utilizáveis de
+              verdade. O núcleo do trabalho recente é a linha Nexus: um ERP
+              financeiro com CRM e um SaaS de gestão para restaurantes, com
+              multiempresa, papéis de acesso e dados isolados no Supabase.
             </p>
             <p>
-              Meu histórico no GitHub mostra evolução consistente: bases sólidas
-              em HTML, CSS e JavaScript, aplicações React com Node e JWT, e
-              experiência mobile com Ionic e TypeScript.
+              Ao lado desses sistemas, entrego experiências comerciais —
+              reservas, cardápios e landings — com o mesmo cuidado de produto,
+              do fluxo autenticado ao pedido que fecha no WhatsApp.
             </p>
           </div>
 
           <dl className="mt-10 grid gap-6 sm:grid-cols-3">
             {[
-              { label: "Repositórios", value: "22+" },
-              { label: "Stack principal", value: "React · Node" },
+              { label: "Linha de produto", value: "Nexus" },
+              { label: "Stack principal", value: "React · Supabase" },
               { label: "Atuação", value: "Fullstack" },
             ].map((stat) => (
               <div key={stat.label} className="border-t border-line pt-4">

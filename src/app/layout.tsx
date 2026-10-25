@@ -24,11 +24,11 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Davi Silva — Desenvolvedor Fullstack",
   description:
-    "Portfólio de Davi Barbosa da Silva. Desenvolvimento fullstack com React, Node.js, APIs autenticadas e produtos digitais.",
+    "Portfólio de Davi Barbosa da Silva. Produtos SaaS fullstack: Nexus ERP, Nexus Food, autenticação e interfaces comerciais.",
   openGraph: {
     title: "Davi Silva — Desenvolvedor Fullstack",
     description:
-      "Aplicações web de ponta a ponta: autenticação, APIs REST, interfaces comerciais e experiência mobile.",
+      "SaaS de ponta a ponta: ERP financeiro, gestão para restaurantes e interfaces comerciais.",
     type: "website",
   },
 };

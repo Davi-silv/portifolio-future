@@ -27,8 +27,8 @@ export function Hero() {
           </h1>
 
           <p className="animate-rise-delay-2 mt-7 max-w-md text-[1.05rem] leading-relaxed text-steel md:text-lg">
-            Desenvolvo aplicações web de ponta a ponta — do backend autenticado
-            às interfaces que geram resultado para o negócio.
+            Desenvolvo produtos SaaS de ponta a ponta — ERP, gestão operacional
+            e interfaces que geram resultado para o negócio.
           </p>
 
           <div className="animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-3">

@@ -19,7 +19,7 @@ export function StackSection() {
             Tecnologias e práticas que uso no dia a dia
           </h2>
           <p className="mt-4 text-steel md:text-[1.05rem]">
-            Base sólida em frontend e backend, com atenção a produto, UX e
+            Da interface ao banco: SaaS multiempresa, segurança de dados e
             entrega contínua.
           </p>
         </div>

@@ -21,8 +21,8 @@ export function Projects() {
             Trabalho selecionado
           </h2>
           <p className="mt-4 max-w-xl text-steel md:text-[1.05rem]">
-            Uma seleção dos meus repositórios no GitHub — produtos digitais e
-            interfaces em produção.
+            Produtos SaaS e interfaces em produção — do ERP multiempresa à
+            operação de restaurantes e experiências comerciais.
           </p>
         </div>
 

@@ -12,6 +12,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "nexus-erp",
+    title: "Nexus ERP",
+    tagline: "SaaS · Financeiro · CRM · Multiempresa",
+    description:
+      "ERP financeiro para pessoa física e PME: contas, lançamentos, fluxo de caixa, contas a pagar, conciliação, DRE e CRM com funil de oportunidades. Arquitetura em camadas, RBAC, planos, PWA e persistência em Supabase com testes Vitest e Playwright.",
+    stack: ["Vite", "JavaScript", "Supabase", "Chart.js", "PWA", "Vitest"],
+    role: "Produto e fullstack",
+    repo: "https://github.com/Davi-silv/nexus-erp",
+    featured: true,
+  },
+  {
+    slug: "nexus-food",
+    title: "Nexus Food",
+    tagline: "Restaurantes · CMV · Estoque · Lucro",
+    description:
+      "SaaS multiempresa para hamburguerias e restaurantes: ficha técnica, CMV, estoque, compras, desperdício, financeiro e dashboard de lucro. Isolamento por empresa com RLS, papéis de acesso, super admin e PWA instalável.",
+    stack: ["React", "Vite", "Supabase", "PostgreSQL", "Recharts", "PWA"],
+    role: "Produto e fullstack",
+    live: "https://nexus-food.vercel.app",
+    repo: "https://github.com/Davi-silv/Nexus-FOOD",
+    featured: true,
+  },
+  {
     slug: "lagos-stays",
     title: "Lagos Stays",
     tagline: "Temporada · Pix · PWA · Região dos Lagos",
@@ -63,7 +86,6 @@ export const projects: Project[] = [
     role: "Frontend",
     live: "https://loja-perfumes-red.vercel.app",
     repo: "https://github.com/Davi-silv/loja-perfumes",
-    featured: true,
   },
   {
     slug: "imobiliaria",
@@ -127,36 +149,38 @@ export const skills = [
     items: [
       "React",
       "Next.js",
-      "TanStack Start",
-      "TypeScript",
       "Vite",
-      "HTML e CSS",
-      "Ionic",
+      "TypeScript",
+      "Tailwind CSS",
+      "PWA",
     ],
   },
   {
     area: "Backend",
     items: [
-      "Node.js",
-      "Express",
       "Supabase",
-      "JWT",
-      "SQLite",
+      "PostgreSQL e RLS",
+      "Node.js",
       "APIs REST",
-      "Validação",
+      "JWT e RBAC",
     ],
   },
   {
     area: "Produto",
     items: [
-      "UX orientada a conversão",
-      "Fluxos WhatsApp e Pix",
-      "E-commerce e temporada",
-      "PWA e interfaces mobile",
+      "SaaS multiempresa",
+      "ERP, CRM e financeiro",
+      "Gestão de restaurantes",
+      "Conversão WhatsApp e Pix",
     ],
   },
   {
     area: "Entrega",
-    items: ["Git e GitHub", "Deploy na Vercel", "MVC", "Context API"],
+    items: [
+      "Git e GitHub",
+      "Deploy na Vercel",
+      "Vitest e Playwright",
+      "Arquitetura em camadas",
+    ],
   },
 ];
