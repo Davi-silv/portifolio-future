@@ -77,6 +77,17 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "vertice-fitness-whatsapp",
+    title: "Vértice Fitness WhatsApp",
+    tagline: "Academia de luxo · Chatbot · Concierge",
+    description:
+      "Fluxo conversacional WhatsApp para a academia de luxo Vértice Fitness: planos e valores, serviços, agendamento de treinos, cadastro de alunos, horários, Google Maps e redirecionamento para atendente. Interface escura com detalhes dourados e slogan SUPERE SEUS LIMITES.",
+    stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
+    role: "Frontend e produto",
+    live: "/demos/vertice-fitness-whatsapp/index.html",
+    featured: true,
+  },
+  {
     slug: "loja-perfumes",
     title: "Loja de Perfumes",
     tagline: "E-commerce · Catálogo · Conversão",
