@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   stack: string[];
   role: string;
+  image?: string;
   live?: string;
   repo?: string;
   featured?: boolean;
@@ -19,6 +20,7 @@ export const projects: Project[] = [
       "ERP financeiro para pessoa física e PME: contas, lançamentos, fluxo de caixa, contas a pagar, conciliação, DRE e CRM com funil de oportunidades. Arquitetura em camadas, RBAC, planos, PWA e persistência em Supabase com testes Vitest e Playwright.",
     stack: ["Vite", "JavaScript", "Supabase", "Chart.js", "PWA", "Vitest"],
     role: "Produto e fullstack",
+    image: "/projects/nexus-erp.webp",
     repo: "https://github.com/Davi-silv/nexus-erp",
     featured: true,
   },
@@ -30,6 +32,7 @@ export const projects: Project[] = [
       "SaaS multiempresa para hamburguerias e restaurantes: ficha técnica, CMV, estoque, compras, desperdício, financeiro e dashboard de lucro. Isolamento por empresa com RLS, papéis de acesso, super admin e PWA instalável.",
     stack: ["React", "Vite", "Supabase", "PostgreSQL", "Recharts", "PWA"],
     role: "Produto e fullstack",
+    image: "/projects/nexus-food.webp",
     live: "https://nexus-food.vercel.app",
     repo: "https://github.com/Davi-silv/Nexus-FOOD",
     featured: true,
@@ -49,6 +52,7 @@ export const projects: Project[] = [
       "PWA",
     ],
     role: "Fullstack e produto",
+    image: "/projects/lagos-stays.webp",
     live: "https://lagos-stays.lovable.app",
     featured: true,
   },
@@ -60,6 +64,7 @@ export const projects: Project[] = [
       "Cardápio digital para a pastelaria Pastel da Casa, com categorias, bandeja de pedidos e envio direto ao WhatsApp. Projetado para uso em balcão e mesas via QR Code.",
     stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
     role: "Frontend e produto",
+    image: "/projects/cardapio-digital.webp",
     live: "https://cardapio-digital-xi-blue.vercel.app",
     repo: "https://github.com/Davi-silv/cardapio-digital",
     featured: true,
@@ -72,6 +77,7 @@ export const projects: Project[] = [
       "Landing page da marca Brigadeirice: sabores, catálogo, essência e história, com pedido direto pelo WhatsApp. HTML, CSS e JavaScript puro, layout responsivo e foco em conversão.",
     stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
     role: "Frontend e produto",
+    image: "/projects/brigadeirice.webp",
     live: "/demos/brigadeirice/index.html",
     repo: "https://github.com/Davi-silv/Brigadeirice",
     featured: true,
@@ -84,6 +90,7 @@ export const projects: Project[] = [
       "Fluxo conversacional WhatsApp para a academia de luxo Vértice Fitness: planos e valores, serviços, agendamento de treinos, cadastro de alunos, horários, Google Maps e redirecionamento para atendente. Interface escura com detalhes dourados e slogan SUPERE SEUS LIMITES.",
     stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
     role: "Frontend e produto",
+    image: "/projects/vertice-fitness.webp",
     live: "/demos/vertice-fitness-whatsapp/index.html",
     featured: true,
   },

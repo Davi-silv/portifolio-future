@@ -27,12 +27,12 @@ O site é uma single-page application com seções:
 | Seção | Conteúdo |
 |---|---|
 | **Hero** | Marca DAVI SILVA, CTAs e Tornado Originkit (fundo global) |
-| **Projetos** | Trabalhos destacados + grade de projetos adicionais |
+| **Projetos** | Cards com capa (featured) + grade de projetos adicionais |
 | **Competências** | Frontend, Backend, Produto e Entrega |
-| **Sobre** | Foto, bio e indicadores |
+| **Sobre** | Foto, bio e indicadores (linha Nexus) |
 | **Contato** | Links para WhatsApp e GitHub |
 
-Os dados dos projetos ficam centralizados em `src/data/projects.ts`.
+Os dados dos projetos ficam centralizados em `src/data/projects.ts`. Capas em `public/projects/`.
 
 ---
 
@@ -42,18 +42,21 @@ Os dados dos projetos ficam centralizados em `src/data/projects.ts`.
 portifolio-future/
 ├── .liveserver/          # Entrada do Go Live → redireciona para :3100
 ├── .vscode/              # Settings do Live Server e tasks
-├── docs/                 # Documentação técnica
-├── public/               # Assets estáticos (foto, ícones)
+├── docs/                 # Arquitetura, desenvolvimento e changelog
+├── public/
+│   ├── demos/            # Demos HTML estáticas
+│   ├── projects/         # Capas WebP dos cards featured
+│   └── davi.jpg
 ├── src/
 │   ├── app/              # App Router (layout, page, globals)
 │   ├── components/       # UI do portfólio + Originkit
-│   │   └── originkit/ui/ # Black Hole e placeholder Globe
+│   │   └── originkit/ui/ # Tornado / Vortex
 │   └── data/             # Projetos e competências
 ├── package.json
 └── README.md
 ```
 
-Documentação detalhada: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)
+Documentação: [ARCHITECTURE](docs/ARCHITECTURE.md) · [DEVELOPMENT](docs/DEVELOPMENT.md) · [CHANGELOG](docs/CHANGELOG.md)
 
 ---
 
@@ -84,20 +87,25 @@ Neste workspace, o **Go Live** usa a porta **5502** e redireciona automaticament
 - [Lagos Stays](https://lagos-stays.lovable.app) — aluguel por temporada (Região dos Lagos), Pix e PWA  
 - [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — produto real com pedido via WhatsApp  
 - [Brigadeirice](/demos/brigadeirice/index.html) — landing de doces gourmet com pedido via WhatsApp  
+- [Vértice Fitness WhatsApp](/demos/vertice-fitness-whatsapp/index.html) — concierge conversacional  
 
 Lista completa editável em `src/data/projects.ts`.
+
+Produção: [portifolio-future.vercel.app](https://portifolio-future.vercel.app)
 
 ---
 
 ## Deploy
 
-Recomendado na [Vercel](https://vercel.com):
+Recomendado na [Vercel](https://vercel.com) (projeto já linkado):
 
 ```bash
 npm run build
+# ou
+vercel deploy --prod --yes
 ```
 
-Configure a porta apenas se for self-hosting; na Vercel a porta é gerenciada automaticamente.
+Push em `main` também dispara o deploy se o GitHub estiver conectado à Vercel.
 
 ---
 

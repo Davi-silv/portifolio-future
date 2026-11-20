@@ -334,6 +334,19 @@ type VortexAPI = {
   dispose: () => void;
 };
 
+/** Probe on a throwaway canvas so three.js never logs a failed WebGLRenderer. */
+function webglAvailable() {
+  try {
+    const probe = document.createElement("canvas");
+    const gl = probe.getContext("webgl2") ?? probe.getContext("webgl");
+    if (!gl) return false;
+    gl.getExtension("WEBGL_lose_context")?.loseContext();
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 /**
  * The engine holds the GL context for as long as the component is mounted, and
  * reads its settings from a ref rather than a snapshot. Two kinds of edit come
@@ -1415,14 +1428,12 @@ function __OriginkitBase_Vortex(props: VortexProps) {
   React.useEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
-    if (!canvas || !container) return;
+    if (!canvas || !container || !webglAvailable()) return;
     try {
       apiRef.current = createVortex(canvas, container, configRef);
-    } catch (err) {
-      // WebGL can be unavailable (blocked, out of contexts, software
-      // render). Fail to a transparent canvas rather than taking the page
-      // down with it.
-      console.warn("[Vortex] init failed:", err);
+    } catch {
+      // A context can still fail after the probe (lost GPU, context limit).
+      // Leave the canvas transparent instead of reporting it on every mount.
       return;
     }
     return () => {
