@@ -45,7 +45,7 @@ Não há backend neste repositório: conteúdo estático no frontend.
 |---|---|
 | `public/projects/*.webp` | Capas dos cards featured |
 | `public/demos/<slug>/` | Demos HTML estáticas (ex.: Brigadeirice, Vértice Fitness) |
-| `public/davi.jpg` | Foto da seção Sobre |
+| `public/davi-portrait.jpg` | Foto da seção Sobre |
 
 ## Componentes principais
 

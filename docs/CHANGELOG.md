@@ -4,6 +4,25 @@ Registro das alterações relevantes do portfólio, em ordem cronológica invers
 
 ---
 
+## 2026-11-20 — Nova foto na seção Sobre
+
+### O que mudou
+
+- Retrato atualizado na seção **Sobre**.
+- Arquivo principal: `public/davi-portrait.jpg` (evita cache do Next.js / navegador na URL antiga `/davi.jpg`).
+- `About.tsx` aponta para `/davi-portrait.jpg`, com `unoptimized` para não reutilizar cache de otimização.
+
+### Arquivos
+
+| Arquivo | Alteração |
+|---|---|
+| `public/davi-portrait.jpg` | Nova foto |
+| `public/davi.jpg` | Cópia atualizada (legado) |
+| `src/components/About.tsx` | Novo `src` da imagem |
+| `README.md`, `docs/*` | Caminho documentado |
+
+---
+
 ## 2026-11-20 — Cards com imagem e animações
 
 ### O que mudou

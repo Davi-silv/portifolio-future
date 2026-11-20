@@ -83,7 +83,7 @@ Altere os componentes em `src/components/` (`Hero`, `About`, `Contact`, etc.).
 
 ### Foto
 
-Substitua `public/davi.jpg` mantendo o mesmo nome, ou atualize o `src` em `About.tsx`.
+Substitua `public/davi-portrait.jpg` ou atualize o `src` em `About.tsx`.
 
 ## Build e produção
 

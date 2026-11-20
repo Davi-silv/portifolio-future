@@ -16,12 +16,13 @@ export function About() {
         >
           <div className="absolute -inset-px border border-line" />
           <Image
-            src="/davi.jpg"
+            src="/davi-portrait.jpg"
             alt="Retrato de Davi Barbosa da Silva"
-            width={640}
-            height={800}
+            width={772}
+            height={1024}
             className="relative z-10 aspect-[4/5] w-full object-cover object-top"
             priority
+            unoptimized
           />
           <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-steel">
             Davi Barbosa da Silva · GitHub @Davi-silv

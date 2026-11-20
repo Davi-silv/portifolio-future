@@ -68,7 +68,7 @@ src/
 public/
 ├── demos/                # Demonstrações estáticas
 ├── projects/             # Capas dos projetos
-└── davi.jpg              # Imagem de perfil
+└── davi-portrait.jpg     # Imagem de perfil
 ```
 
 ## Executar localmente
