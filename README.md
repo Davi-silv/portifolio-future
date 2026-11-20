@@ -1,114 +1,114 @@
-# Portfólio Future — Davi Silva
+# Portfólio Future — Davi Barbosa da Silva
 
-Portfólio profissional de **Davi Barbosa da Silva**, desenvolvido com Next.js, TypeScript e Tailwind CSS. Apresenta projetos fullstack selecionados do GitHub, com visual contemporâneo e o componente **Tornado / Vortex** (Originkit) como fundo animado em todo o site.
+<div align="center">
 
-**Autor:** [Davi-silv](https://github.com/Davi-silv)  
-**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion · Three.js · Originkit Tornado
+### Portfólio de desenvolvimento Front-End e Full Stack
+
+Projetos, competências e experiência prática em desenvolvimento de soluções web.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+**[Ver portfólio online](https://portifolio-future.vercel.app/)** · **[GitHub](https://github.com/Davi-silv)** · **[LinkedIn](https://www.linkedin.com/in/davi-barbosa-silva/)**
+
+</div>
 
 ---
 
-## Demonstração local
+## Sobre o projeto
+
+O **Portfólio Future** é o site profissional de **Davi Barbosa da Silva**, desenvolvido para apresentar projetos, competências técnicas e canais de contato. Utiliza o **App Router do Next.js** e uma interface com animações.
+
+A experiência visual inclui o componente **Tornado / Vortex (Originkit)**, usado como fundo animado, além de animações com Framer Motion e recursos 3D associados ao Three.js.
+
+## Principais seções
+
+| Seção | Conteúdo |
+| --- | --- |
+| Apresentação | Identidade profissional, chamada principal e links de navegação |
+| Projetos | Cards de projetos destacados e outros trabalhos |
+| Competências | Tecnologias e áreas de atuação |
+| Sobre | Trajetória e informações do desenvolvedor |
+| Contato | Acesso aos canais profissionais |
+
+O catálogo de projetos e competências pode ser editado em `src/data/projects.ts`, e as capas dos projetos ficam em `public/projects/`.
+
+## Tecnologias
+
+- **Next.js 16** e **React 19**;
+- **TypeScript**;
+- **Tailwind CSS 4**;
+- **Framer Motion**;
+- **Three.js**;
+- **Originkit Tornado / Vortex**.
+
+## Projetos apresentados
+
+O portfólio documenta, entre outros:
+
+- [Nexus ERP](https://github.com/Davi-silv/nexus-erp) — sistema de gestão financeira;
+- [Nexus Food](https://github.com/Davi-silv/Nexus-FOOD) — gestão para restaurantes;
+- [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — cardápio com pedidos via WhatsApp;
+- [Brigadeirice](https://github.com/Davi-silv/Brigadeirice) — landing page para doces gourmet;
+- [Vértice Fitness](https://github.com/Davi-silv/vertice-fitness-whatsapp) — aplicação de academia com painel de gestão.
+
+A lista exibida no site pode mudar conforme `src/data/projects.ts`.
+
+## Organização do código
+
+```text
+src/
+├── app/                  # Rotas, layout e estilos globais
+├── components/           # Componentes visuais e animações
+│   └── originkit/ui/     # Tornado / Vortex
+└── data/                 # Dados dos projetos e competências
+
+public/
+├── demos/                # Demonstrações estáticas
+├── projects/             # Capas dos projetos
+└── davi.jpg              # Imagem de perfil
+```
+
+## Executar localmente
+
+**Pré-requisito:** Node.js e npm.
 
 ```bash
+git clone https://github.com/Davi-silv/portifolio-future.git
+cd portifolio-future
 npm install
 npm run dev
 ```
 
-Abra: [http://localhost:3100](http://localhost:3100)
+Acesse **http://localhost:3100**.
 
-> A porta padrão deste projeto é **3100** (evita conflito com caches de outros apps em `localhost:3000`).
+| Comando | Função |
+| --- | --- |
+| `npm run dev` | Iniciar o ambiente de desenvolvimento (porta 3100) |
+| `npm run build` | Gerar o build de produção |
+| `npm run start` | Iniciar o servidor de produção (porta 3100) |
+| `npm run lint` | Executar o ESLint |
 
----
+O workspace também possui configuração de **Go Live**, com redirecionamento da porta 5502 para o servidor Next.js na porta 3100.
 
-## Visão geral
+## Publicação
 
-O site é uma single-page application com seções:
+O projeto está disponível em **[portifolio-future.vercel.app](https://portifolio-future.vercel.app/)**. A documentação existente contempla deploy na Vercel.
 
-| Seção | Conteúdo |
-|---|---|
-| **Hero** | Marca DAVI SILVA, CTAs e Tornado Originkit (fundo global) |
-| **Projetos** | Cards com capa (featured) + grade de projetos adicionais |
-| **Competências** | Frontend, Backend, Produto e Entrega |
-| **Sobre** | Foto, bio e indicadores (linha Nexus) |
-| **Contato** | Links para WhatsApp e GitHub |
+## Documentação
 
-Os dados dos projetos ficam centralizados em `src/data/projects.ts`. Capas em `public/projects/`.
+- [Arquitetura](docs/ARCHITECTURE.md)
+- [Desenvolvimento](docs/DEVELOPMENT.md)
+- [Histórico de alterações](docs/CHANGELOG.md)
 
----
+## Autoria
 
-## Estrutura do projeto
+**Davi Barbosa da Silva** — Desenvolvedor de Software e fundador da **Evolutiva Tech**.
 
-```text
-portifolio-future/
-├── .liveserver/          # Entrada do Go Live → redireciona para :3100
-├── .vscode/              # Settings do Live Server e tasks
-├── docs/                 # Arquitetura, desenvolvimento e changelog
-├── public/
-│   ├── demos/            # Demos HTML estáticas
-│   ├── projects/         # Capas WebP dos cards featured
-│   └── davi.jpg
-├── src/
-│   ├── app/              # App Router (layout, page, globals)
-│   ├── components/       # UI do portfólio + Originkit
-│   │   └── originkit/ui/ # Tornado / Vortex
-│   └── data/             # Projetos e competências
-├── package.json
-└── README.md
-```
-
-Documentação: [ARCHITECTURE](docs/ARCHITECTURE.md) · [DEVELOPMENT](docs/DEVELOPMENT.md) · [CHANGELOG](docs/CHANGELOG.md)
+[GitHub](https://github.com/Davi-silv) · [LinkedIn](https://www.linkedin.com/in/davi-barbosa-silva/) · [Portfólio](https://portifolio-future.vercel.app/)
 
 ---
 
-## Scripts
-
-| Comando | Descrição |
-|---|---|
-| `npm run dev` | Servidor de desenvolvimento em `0.0.0.0:3100` |
-| `npm run build` | Build de produção |
-| `npm run start` | Sobe o build em `0.0.0.0:3100` |
-| `npm run lint` | ESLint |
-
----
-
-## Go Live (Live Server)
-
-Neste workspace, o **Go Live** usa a porta **5502** e redireciona automaticamente para o Next.js em **http://localhost:3100**.
-
-1. Rode `npm run dev`
-2. Clique em **Go Live** na barra de status do Cursor/VS Code
-
----
-
-## Projetos em destaque
-
-- [Nexus ERP](https://github.com/Davi-silv/nexus-erp) — ERP financeiro e CRM multiempresa  
-- [Nexus Food](https://nexus-food.vercel.app) — gestão de restaurantes: CMV, estoque e lucro  
-- [Lagos Stays](https://lagos-stays.lovable.app) — aluguel por temporada (Região dos Lagos), Pix e PWA  
-- [Cardápio Digital](https://github.com/Davi-silv/cardapio-digital) — produto real com pedido via WhatsApp  
-- [Brigadeirice](/demos/brigadeirice/index.html) — landing de doces gourmet com pedido via WhatsApp  
-- [Vértice Fitness WhatsApp](/demos/vertice-fitness-whatsapp/index.html) — concierge conversacional  
-
-Lista completa editável em `src/data/projects.ts`.
-
-Produção: [portifolio-future.vercel.app](https://portifolio-future.vercel.app)
-
----
-
-## Deploy
-
-Recomendado na [Vercel](https://vercel.com) (projeto já linkado):
-
-```bash
-npm run build
-# ou
-vercel deploy --prod --yes
-```
-
-Push em `main` também dispara o deploy se o GitHub estiver conectado à Vercel.
-
----
-
-## Licença
-
-Projeto pessoal de portfólio. Código disponível para fins de demonstração e estudo.
+<sub>Projeto pessoal de portfólio. Consulte os arquivos e os direitos de cada recurso antes de reutilizar o conteúdo.</sub>
