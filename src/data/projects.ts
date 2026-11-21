@@ -85,13 +85,14 @@ export const projects: Project[] = [
   {
     slug: "vertice-fitness-whatsapp",
     title: "Vértice Fitness WhatsApp",
-    tagline: "Academia de luxo · Chatbot · Concierge",
+    tagline: "Full Stack · Node.js · Gestão de academia",
     description:
-      "Fluxo conversacional WhatsApp para a academia de luxo Vértice Fitness: planos e valores, serviços, agendamento de treinos, cadastro de alunos, horários, Google Maps e redirecionamento para atendente. Interface escura com detalhes dourados e slogan SUPERE SEUS LIMITES.",
-    stack: ["HTML", "CSS", "JavaScript", "UX", "WhatsApp"],
-    role: "Frontend e produto",
+      "Aplicação Full Stack para academia, com landing page, concierge conversacional e painel administrativo. Backend em Node.js e Express, API para autenticação, chat e gestão, sessões e persistência em SQLite; frontend em HTML, CSS e JavaScript. O projeto documenta cadastro de alunos, planos, check-ins, agenda e financeiro. A demonstração disponível neste portfólio é uma versão estática da interface, sem executar o backend nem garantir persistência de dados. Consulte o repositório para conhecer a aplicação completa e suas limitações de implantação.",
+    stack: ["JavaScript", "Node.js", "Express", "SQLite", "HTML", "CSS"],
+    role: "Desenvolvimento Full Stack",
     image: "/projects/vertice-fitness.webp",
     live: "/demos/vertice-fitness-whatsapp/index.html",
+    repo: "https://github.com/Davi-silv/vertice-fitness-whatsapp",
     featured: true,
   },
   {
