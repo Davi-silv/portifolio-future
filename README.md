@@ -97,6 +97,17 @@ O workspace também possui configuração de **Go Live**, com redirecionamento d
 
 O projeto está disponível em **[portifolio-future.vercel.app](https://portifolio-future.vercel.app/)**. A documentação existente contempla deploy na Vercel.
 
+## Testes e qualidade — escopo das evidências
+
+O **site deste portfólio** ainda não dispõe de uma suíte automatizada própria. O comando `npm run lint` executa ESLint, mas não substitui testes funcionais.
+
+A experiência com ferramentas de teste é demonstrada por outros repositórios:
+
+- **[Nexus ERP](https://github.com/Davi-silv/nexus-erp):** Vitest (scripts unitários e de integração) e Playwright (configuração e script de testes E2E). Consulte [package.json](https://github.com/Davi-silv/nexus-erp/blob/main/package.json) e [playwright.config.js](https://github.com/Davi-silv/nexus-erp/blob/main/playwright.config.js).
+- **[Nexus Food](https://github.com/Davi-silv/Nexus-FOOD):** Vitest e React Testing Library, com script específico para testes de segurança. Consulte [package.json](https://github.com/Davi-silv/Nexus-FOOD/blob/main/package.json) e [src/tests/security](https://github.com/Davi-silv/Nexus-FOOD/tree/main/src/tests/security).
+
+**Limitação:** a presença de testes e comandos foi inspecionada, mas a execução bem-sucedida, cobertura e status de CI não foram confirmados. Não há indicação de pipeline aprovado nesta documentação.
+
 ## Documentação
 
 - [Arquitetura](docs/ARCHITECTURE.md)
