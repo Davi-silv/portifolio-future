@@ -98,6 +98,19 @@ src/components/originkit/ui/tornado.tsx
 
 - Sem formulário de contato embutido (WhatsApp / GitHub)
 - Sem i18n (apenas `pt-BR`)
-- Sem testes automatizados ainda
+- Sem suíte de testes automatizados própria neste repositório (o `package.json` oferece lint, mas não scripts de Vitest ou Playwright).
+
+## Evidências de testes em projetos relacionados
+
+As competências de testes exibidas no portfólio referem-se aos projetos associados, **não** a uma suíte de testes executada neste site:
+
+| Ferramenta | Projeto | Evidência verificável |
+|---|---|---|
+| Vitest | [Nexus ERP](https://github.com/Davi-silv/nexus-erp) | Scripts `test` e `test:integration` em [package.json](https://github.com/Davi-silv/nexus-erp/blob/main/package.json); diretório `tests/integration/` |
+| Playwright | [Nexus ERP](https://github.com/Davi-silv/nexus-erp) | [playwright.config.js](https://github.com/Davi-silv/nexus-erp/blob/main/playwright.config.js), [script E2E](https://github.com/Davi-silv/nexus-erp/blob/main/scripts/test-e2e.sh) e diretório `tests/e2e/` |
+| Vitest e React Testing Library | [Nexus Food](https://github.com/Davi-silv/Nexus-FOOD) | Scripts `test` e `test:security` em [package.json](https://github.com/Davi-silv/Nexus-FOOD/blob/main/package.json); diretório `src/tests/security/` |
+
+**Escopo da verificação:** foram conferidos scripts, configurações e presença dos diretórios acima. Não foram executados testes, apurada cobertura ou confirmados resultados de CI nesta revisão. Portanto, a documentação não afirma que as suítes estejam passando ou que exista pipeline de CI ativo.
+
 
 Histórico de mudanças: [CHANGELOG.md](./CHANGELOG.md)
