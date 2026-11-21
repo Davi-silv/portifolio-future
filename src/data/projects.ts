@@ -198,7 +198,8 @@ export const skills = [
     items: [
       "Git e GitHub",
       "Deploy na Vercel",
-      "Vitest e Playwright",
+      "Vitest (Nexus ERP e Nexus Food)",
+      "Playwright E2E (Nexus ERP)",
       "Arquitetura em camadas",
     ],
   },
