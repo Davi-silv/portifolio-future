@@ -51,7 +51,7 @@ export function TornadoBackdrop() {
           style={{ background: "transparent" }}
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-void/15 via-void/30 to-void/65" />
+      <div className="absolute inset-0 bg-gradient-to-b from-void/40 via-void/55 to-void/85" />
     </div>
   );
 }

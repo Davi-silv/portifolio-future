@@ -4,6 +4,25 @@ Registro das alterações relevantes do portfólio, em ordem cronológica invers
 
 ---
 
+## 2026-11-20 — Fundo escuro original restaurado
+
+### Problema
+
+O `.atmosphere` usava gradientes semitransparentes; o branco do `html` vazava e o site parecia cinza/claro.
+
+### Solução
+
+- `html` e `body` com base sólida `--void` (`#070a0e`).
+- Gradiente do `.atmosphere` opaco (sem transparência).
+- Fallback do Tornado e véu do backdrop suavizados para não clarear a tela.
+
+### Arquivos
+
+- `src/app/globals.css`
+- `src/components/TornadoBackdrop.tsx`
+
+---
+
 ## 2026-11-20 — Tornado com fallback CSS
 
 ### Problema
