@@ -15,11 +15,11 @@ export const projects: Project[] = [
   {
     slug: "nexus-erp",
     title: "Nexus ERP",
-    tagline: "SaaS · Financeiro · CRM · Multiempresa",
+    tagline: "MVP · Gestão financeira · Arquitetura modular",
     description:
-      "ERP financeiro para pessoa física e PME: contas, lançamentos, fluxo de caixa, contas a pagar, conciliação, DRE e CRM com funil de oportunidades. Arquitetura em camadas, RBAC, planos, PWA e persistência em Supabase com testes Vitest e Playwright.",
-    stack: ["Vite", "JavaScript", "Supabase", "Chart.js", "PWA", "Vitest"],
-    role: "Produto e fullstack",
+      "MVP de gestão financeira para pessoas físicas e pequenas empresas, com dashboards, contas, lançamentos, orçamentos, conciliação por CSV e relatórios. Desenvolvido em JavaScript modular e Vite, com arquitetura em camadas, PWA, persistência local no navegador e testes com Vitest e Playwright. A evolução para backend SaaS, autenticação, Supabase e recursos avançados de CRM e permissões está no planejamento, não sendo apresentada como operação em produção.",
+    stack: ["Vite", "JavaScript", "PWA", "Vitest", "Playwright"],
+    role: "Desenvolvimento de produto e frontend",
     image: "/projects/nexus-erp.webp",
     repo: "https://github.com/Davi-silv/nexus-erp",
     featured: true,
