@@ -338,9 +338,17 @@ type VortexAPI = {
 function webglAvailable() {
   try {
     const probe = document.createElement("canvas");
-    const gl = probe.getContext("webgl2") ?? probe.getContext("webgl");
+    const gl =
+      (probe.getContext("webgl2", {
+        failIfMajorPerformanceCaveat: false,
+      }) as WebGLRenderingContext | null) ??
+      (probe.getContext("webgl", {
+        failIfMajorPerformanceCaveat: false,
+      }) as WebGLRenderingContext | null);
     if (!gl) return false;
-    gl.getExtension("WEBGL_lose_context")?.loseContext();
+    // Sandboxed / disabled GPUs often return a context that cannot draw.
+    const info = `${gl.getParameter(gl.VENDOR) ?? ""} ${gl.getParameter(gl.RENDERER) ?? ""}`;
+    if (/disabled/i.test(info)) return false;
     return true;
   } catch {
     return false;
@@ -368,9 +376,10 @@ function createVortex(
   /* ---------------------------------------- renderer, kept for good */
   const renderer = new THREE.WebGLRenderer({
     canvas,
-    antialias: true,
+    antialias: false,
     alpha: true,
-    powerPreference: "high-performance",
+    powerPreference: "default",
+    failIfMajorPerformanceCaveat: false,
   });
   renderer.setClearColor(0x000000, 0);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
@@ -1429,13 +1438,14 @@ function __OriginkitBase_Vortex(props: VortexProps) {
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (!canvas || !container || !webglAvailable()) return;
+
     try {
       apiRef.current = createVortex(canvas, container, configRef);
     } catch {
-      // A context can still fail after the probe (lost GPU, context limit).
-      // Leave the canvas transparent instead of reporting it on every mount.
+      // Context can still fail after the probe — keep a transparent canvas.
       return;
     }
+
     return () => {
       apiRef.current?.dispose();
       apiRef.current = null;

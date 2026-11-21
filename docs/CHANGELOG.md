@@ -4,6 +4,30 @@ Registro das alterações relevantes do portfólio, em ordem cronológica invers
 
 ---
 
+## 2026-11-20 — Tornado com fallback CSS
+
+### Problema
+
+Em ambientes com WebGL desativado (preview sandbox / GPU bloqueada), o Vortex Three.js não iniciava e o fundo ficava estático.
+
+### Solução
+
+- `TornadoFallback` — animação CSS (brilhos, anéis e partículas) sempre ativa.
+- `TornadoBackdrop` monta o fallback **e** o Vortex 3D (quando WebGL existir).
+- Probe WebGL mais rigoroso (ignora contextos `Disabled`) e renderer Three.js mais compatível (`powerPreference: "default"`, sem antialias forçado).
+- Intensidade do fundo 3D aumentada (mais partículas / menos véu escuro).
+
+### Arquivos
+
+| Arquivo | Alteração |
+|---|---|
+| `src/components/TornadoFallback.tsx` | Novo fallback CSS |
+| `src/components/TornadoBackdrop.tsx` | Fallback + Vortex |
+| `src/app/globals.css` | Keyframes `.tornado-fallback*` |
+| `src/components/originkit/ui/tornado.tsx` | Probe e opções do renderer |
+
+---
+
 ## 2026-11-20 — Nova foto na seção Sobre
 
 ### O que mudou

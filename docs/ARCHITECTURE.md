@@ -53,7 +53,8 @@ Não há backend neste repositório: conteúdo estático no frontend.
 |---|---|
 | `SiteHeader.tsx` | Navegação âncora + link GitHub |
 | `Hero.tsx` | Primeira dobra, CTAs |
-| `TornadoBackdrop.tsx` | Fundo WebGL fixo (Originkit Tornado) |
+| `TornadoBackdrop.tsx` | Fundo fixo: fallback CSS + Originkit Tornado |
+| `TornadoFallback.tsx` | Animação CSS quando WebGL está indisponível |
 | `tornado.tsx` | Motor Three.js do vortex + probe WebGL |
 | `Projects.tsx` | Cards featured (com imagem) + grade secundária |
 | `StackSection.tsx` | Competências |
@@ -69,6 +70,7 @@ Variáveis em `src/app/globals.css`:
 - `--mist`, `--steel` — tipografia
 - `--signal`, `--ember` — acentos
 - Utilitários: `.atmosphere`, `.grid-field`, animações `rise` / `drift`
+- Fallback Tornado: `.tornado-fallback*` (spin / drift / sparks)
 
 ## Integração Originkit
 
@@ -78,9 +80,10 @@ O Tornado (Vortex) vive em:
 src/components/originkit/ui/tornado.tsx
 ```
 
-É montado uma vez via `TornadoBackdrop` (dynamic, `ssr: false`) como fundo fixo. Cores alinhadas à marca (`#3ad4ba`, `#8fa8b5`, `#e07a4f`).
+É montado via `TornadoBackdrop` (dynamic, `ssr: false`) junto com `TornadoFallback`. Cores alinhadas à marca (`#3ad4ba`, `#8fa8b5`, `#e07a4f`).
 
-Se WebGL não estiver disponível, o componente não inicializa o renderer e a página segue com o fundo estático.
+- **Com WebGL:** Vortex Three.js por cima do fallback.
+- **Sem WebGL:** apenas o fallback CSS mantém movimento no fundo.
 
 ## Decisões relevantes
 

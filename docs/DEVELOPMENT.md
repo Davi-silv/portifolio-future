@@ -137,6 +137,7 @@ Repositório: [github.com/Davi-silv/portifolio-future](https://github.com/Davi-s
 - [ ] Foto e bio atualizadas
 - [ ] `npm run build` sem erros
 - [ ] Teste mobile (hero + cards + navegação)
-- [ ] Sem spam de erros WebGL no terminal (fallback do Tornado)
+- [ ] Fundo animado visível (Vortex 3D ou `TornadoFallback` CSS)
+- [ ] Sem spam de erros WebGL no terminal
 
 Histórico de mudanças: [CHANGELOG.md](./CHANGELOG.md)
